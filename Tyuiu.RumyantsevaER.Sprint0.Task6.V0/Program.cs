@@ -3,23 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Tyuiu.RumyantsevaER.Sprint0.Task6.V0.Lib
 
-using Tyuiu.RumyantsevaER.Sprint0.Task4.V0.Lib;
-
-namespace Tyuiu.RumyantsevaER.Sprint0.Task4.V0
+namespace Tyuiu.RumyantsevaER.Sprint0.Task6.V0
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //линейная
-            Console.WriteLine("А + В = " + DataService.Addition(1, 5));
-            Console.WriteLine("А - В = " + DataService.Subtraction(15, 5));
-            Console.WriteLine("А * В = " + DataService.Multiplication(10, 10));
-            //разветвляющаяся
-            Console.WriteLine("А / В = " + DataService.Division(9, 3));
+            int[] numsArray = new int[] { 1, 2, 3, 4, 5 };
+
+            Console.WriteLine("Сумма элементов массива = " + DataService.AdditionArray(numsArray));
+            Console.WriteLine("Разность элементов массива = " + DataService.SubtractionArray(numsArray));
+            Console.WriteLine("Произведение элементов массива = " + DataService.MultiplicationArray(numsArray));
             Console.ReadKey();
         }
     }
 }
-

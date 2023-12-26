@@ -1,35 +1,33 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-using Tyuiu.RumyantsevaER.Sprint0.Task4.V0.Lib;
+using Tyuiu.RumyantsevaER.Sprint0.Task6.V0.Lib;
 
-namespace Tyuiu.RumyantsevaER.Sprint0.Task4.V0.Test
+namespace Tyuiu.RumyantsevaER.Sprint0.Task6.V0.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void CheckedAdditionValid()
+        public void CheckAdditionArrayValid()
         {
-            Assert.AreEqual(10, DataService.Addition(5, 5));
+            var numbers = new int[] { 1, 2, 3, 4, 5 };
+            var res = DataService.AdditionArray(numbers);
+            Assert.AreEqual(15, res);
         }
-
         [TestMethod]
-        public void CheckedSubtractionValid()
+        public void CheckSubtractionArrayValid()
         {
-            Assert.AreEqual(5, DataService.Subtraction(10, 5));
+            var numbers = new int[] { 1, 2, 3, 4, 5 };
+            var res = DataService.SubtractionArray(numbers);
+            Assert.AreEqual(-15, res);
         }
-
         [TestMethod]
-        public void CheckedMultiplicationValid()
+        public void CheckMultArrayValid()
         {
-            Assert.AreEqual(50, DataService.Multiplication(10, 5));
-        }
-
-        [TestMethod]
-        public void CheckedDivisionValid()
-        {
-            Assert.AreEqual(3, DataService.Division(9, 3));
+            var numbers = new int[] { 1, 2, 3, 4, 5 };
+            var res = DataService.MultiplicationArray(numbers);
+            Assert.AreEqual(120, res);
         }
     }
 }

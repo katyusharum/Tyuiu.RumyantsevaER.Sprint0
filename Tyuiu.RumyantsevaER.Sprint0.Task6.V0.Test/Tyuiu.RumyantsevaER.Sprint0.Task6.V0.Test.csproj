@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E14A2168-C5BB-4B48-B230-EC3D56B1DCF1}</ProjectGuid>
+    <ProjectGuid>{C6324A36-87EB-4518-B857-0ECA187ED761}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tyuiu.RumyantsevaER.Sprint0.Task6.V0.Test</RootNamespace>
@@ -56,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Tyuiu.RumyantsevaER.Sprint0.Task6.V0.Lib\Tyuiu.RumyantsevaER.Sprint0.Task5.V0.Lib.csproj">
-      <Project>{af5a7a3c-c43f-4884-b22d-81654885514f}</Project>
-      <Name>Tyuiu.RumyantsevaER.Sprint0.Task5.V0.Lib</Name>
+    <ProjectReference Include="..\Tyuiu.RumyantsevaER.Sprint0.Task6.V0.Lib\Tyuiu.RumyantsevaER.Sprint0.Task6.V0.Lib.csproj">
+      <Project>{80fe8602-64f3-45c5-acd7-2e76bb1d40c3}</Project>
+      <Name>Tyuiu.RumyantsevaER.Sprint0.Task6.V0.Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

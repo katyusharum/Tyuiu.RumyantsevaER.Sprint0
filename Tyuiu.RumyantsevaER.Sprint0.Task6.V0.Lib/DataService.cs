@@ -4,36 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tyuiu.RumyantsevaER.Sprint0.Task4.V0.Lib
+namespace Tyuiu.RumyantsevaER.Sprint0.Task6.V0.Lib
 {
-    public class DataService
-    {
-        public static int Addition(int a, int b)
+     public class DataService
+     {
+        public static object AdditionArray(int[] numbers)
         {
-            return a + b;
-        }
-
-        public static int Subtraction(int a, int b)
-        {
-            return a - b;
-        }
-
-        public static int Multiplication(int a, int b)
-        {
-            return a * b;
-        }
-
-        public static double Division(int a, int b)
-        {
-            if (b == 0)
+            var total = 0;
+            for (var i = 0, i < numbers.Length; i++)
             {
-                Console.WriteLine("Переменная b = {0} на ноль делить нельзя", b);
-                return -1;
+              total = total + numbers[i];
             }
-            else
-            {
-                return a / b;
-            }
+            return total;
         }
-    }
+        public static object SubtractionArray(int[] numbers)
+        {
+            var total = 0;
+            int index = 0;
+
+            while (index < numbers.Length)
+            {
+               total = total - numbers[i];
+               index++;
+            }
+             return total;
+        }
+        public static object MultiplicationArray(int[] numbers)
+        {
+            var total = 1;
+            var index = 0;
+            do
+            {
+                total = total * numbers[index];
+                index++;
+            }
+            while (index < numbers.Length);
+            return total;
+        }
+     }
 }
